@@ -1,0 +1,18 @@
+Stop using inheritance if possible.
+
+OO developers use inheritance for two reasons: they don't like typing, or they like types.
+
+1. Don't like typing (use inheritance to share code):
+It creates coupling.
+
+2. Types:
+Adds complexity as inheritance grows.
+You cannot model your domain accurately.
+
+The alternatives:
+1. Use interface (java) without polymorphism, so no coupling.
+
+2. Delegation, delegate the functionality to other object, will expose none of the base APIs.
+  Has-A trumps Is-A
+
+3. Using mixins to share functionality (sisyphus mixins). Mixins are a set of functions that can be shared by other projects.

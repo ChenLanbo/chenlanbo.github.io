@@ -1,0 +1,10 @@
+Actor is an independent virtual processor with its own local private state.
+
+Each actor has a mailbox. Message passing is one-way and no reply.
+
+Actors run concurrently, asynchronously and share nothing.
+
+We should use the actor model:
+1. reduce the lock contention.
+2. simplify the code.
+3. avoid possible deadlock.

@@ -1,0 +1,12 @@
+Temporal coupling happens when your code imposes a sequence on the things that is not required to solve the problem.
+
+We should think about the role of time as a design element of the software itself.
+Two aspect:
+1. Concurrency: the software mechanism that executes two or more pieces of code to act as if they run at the same time.
+2. Ordering: the relative positions of things in time.
+
+Use activity diagram, which helps:
+1. to find out what can happen at the same time.
+2. what must happen in a strict order.
+
+Find activities that takes time, but not time in your code, which means i/o operations, RPCs, etc.
